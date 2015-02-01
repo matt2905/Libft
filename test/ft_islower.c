@@ -1,25 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   printf.h                                           :+:      :+:    :+:   */
+/*   ft_islower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmartin <mmartin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2013/12/17 09:43:29 by mmartin           #+#    #+#             */
-/*   Updated: 2015/02/01 17:30:43 by mmartin          ###   ########.fr       */
+/*   Created: 2015/02/01 16:26:49 by mmartin           #+#    #+#             */
+/*   Updated: 2015/02/01 16:27:00 by mmartin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PRINTF_H
-# define PRINTF_H
-
-# include <stdarg.h>
-# include "ft_struct_lib.h"
-
-int		ft_printf(const char *str, ...);
-int		ft_get_flags(const char *str, t_printf *flags, va_list ap);
-void	ft_printchar(char c, int *i);
-void	ft_printstr(char *str, t_printf *flags, int *i);
-void	ft_printnbr(char *str, t_printf *flags, char *c, int *i);
-
-#endif
+int		ft_islower(int c)
+{
+	if (c >= 'a' && c <= 'z')
+		return (1);
+	else
+		return (0);
+}

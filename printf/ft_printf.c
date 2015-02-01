@@ -6,7 +6,7 @@
 /*   By: mmartin <mmartin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/12/20 17:34:21 by mmartin           #+#    #+#             */
-/*   Updated: 2015/01/23 10:51:49 by mmartin          ###   ########.fr       */
+/*   Updated: 2015/02/01 17:30:56 by mmartin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ static void	ft_check_spec(va_list ap, const char *str, t_printf *fl, int *i)
 	if (*str == 's')
 		ft_printstr(va_arg(ap, char *), fl, i);
 	else if ((*str == 'd' || *str == 'i') && (msg = fl->sign))
-		ptr = ft_itoa(va_arg(ap, int));
+		ptr = ft_itoa(va_arg(ap, int), 10);
 	else if (*str == 'x' && (msg = fl->sharp))
 		ptr = ft_uitoa(va_arg(ap, unsigned int), 16);
 	else if (*str == 'o' && (msg = fl->sharp))

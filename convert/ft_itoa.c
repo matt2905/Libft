@@ -6,7 +6,7 @@
 /*   By: mmartin <mmartin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/24 17:01:05 by mmartin           #+#    #+#             */
-/*   Updated: 2015/01/23 10:51:08 by mmartin          ###   ########.fr       */
+/*   Updated: 2015/02/01 17:30:36 by mmartin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,14 +38,12 @@ static int	ft_len(long int n, int sys)
 	return (j);
 }
 
-char		*ft_itoa(long int n)
+char		*ft_itoa(long int n, size_t sys)
 {
 	char	*str;
 	int		sign;
 	int		i;
-	int		sys;
 
-	sys = 10;
 	sign = 0;
 	i = 0;
 	if (n < 0)

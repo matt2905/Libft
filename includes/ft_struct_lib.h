@@ -1,17 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_struct.h                                        :+:      :+:    :+:   */
+/*   ft_struct_lib.h                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmartin <mmartin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/03/25 21:34:09 by mmartin           #+#    #+#             */
-/*   Updated: 2014/06/10 11:48:55 by mmartin          ###   ########.fr       */
+/*   Updated: 2015/02/01 17:23:45 by mmartin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_STRUCT_H
-# define FT_STRUCT_H
+#ifndef FT_STRUCT_LIB_H
+# define FT_STRUCT_LIB_H
 
 # include <string.h>
 

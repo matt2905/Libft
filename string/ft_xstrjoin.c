@@ -6,7 +6,7 @@
 /*   By: mmartin <mmartin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/06/10 11:21:35 by mmartin           #+#    #+#             */
-/*   Updated: 2015/01/23 10:52:30 by mmartin          ###   ########.fr       */
+/*   Updated: 2015/02/01 17:31:20 by mmartin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ static int		ft_get_len(va_list ap, const char *str)
 				len += ft_strlen(va_arg(ap, char *));
 			else
 			{
-				tmp = ft_itoa(va_arg(ap, int));
+				tmp = ft_itoa(va_arg(ap, int), 10);
 				len += ft_strlen(tmp);
 				ft_strdel(&tmp);
 			}
@@ -71,7 +71,7 @@ static char		*ft_get_str(va_list ap, const char *str, int len)
 				ft_copy_str(&dst, &i, va_arg(ap, char *));
 			else
 			{
-				tmp = ft_itoa(va_arg(ap, int));
+				tmp = ft_itoa(va_arg(ap, int), 10);
 				ft_copy_str(&dst, &i, tmp);
 				ft_strdel(&tmp);
 			}

@@ -6,7 +6,7 @@
 /*   By: mmartin <mmartin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/12/21 11:03:32 by mmartin           #+#    #+#             */
-/*   Updated: 2015/01/23 10:52:01 by mmartin          ###   ########.fr       */
+/*   Updated: 2015/02/01 17:31:05 by mmartin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ static void	ft_get_precision(t_printf *flags, char **str, int *i, char *c)
 		ft_printchar('-', i);
 		ld = ft_atoi(*str);
 		ld = ld * -1;
-		*str = ft_itoa(ld);
+		*str = ft_itoa(ld, 10);
 	}
 	len = ft_strlen(*str);
 	if (flags->precision < 0)
