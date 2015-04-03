@@ -6,7 +6,7 @@
 #    By: mmartin <mmartin@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2013/11/20 11:21:56 by mmartin           #+#    #+#              #
-#    Updated: 2015/01/27 18:07:11 by mmartin          ###   ########.fr        #
+#    Updated: 2015/04/03 08:57:34 by mmartin          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -50,6 +50,7 @@ $(DOBJ)%.o:	%.c
 	@mkdir -p $(DOBJ)printf
 	@mkdir -p $(DOBJ)regex
 	@mkdir -p $(DOBJ)share
+	@mkdir -p $(DOBJ)sort
 	@mkdir -p $(DOBJ)string
 	@mkdir -p $(DOBJ)test
 	@mkdir -p $(DOBJ)write

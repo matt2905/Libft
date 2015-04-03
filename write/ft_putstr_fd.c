@@ -6,7 +6,7 @@
 /*   By: mmartin <mmartin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/23 12:52:21 by mmartin           #+#    #+#             */
-/*   Updated: 2014/01/01 13:32:23 by mmartin          ###   ########.fr       */
+/*   Updated: 2015/03/26 17:30:37 by mmartin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ void	ft_putstr_fd(char const *s, int fd)
 	int		i;
 
 	i = 0;
+	if (!s)
+		return ;
 	while (s[i])
 		i++;
 	write(fd, s, i);

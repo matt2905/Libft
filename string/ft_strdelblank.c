@@ -1,34 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr.c                                        :+:      :+:    :+:   */
+/*   ft_strdelblank.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmartin <mmartin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2013/11/23 12:25:04 by mmartin           #+#    #+#             */
-/*   Updated: 2015/01/26 15:31:37 by mmartin          ###   ########.fr       */
+/*   Created: 2015/02/11 12:14:42 by mmartin           #+#    #+#             */
+/*   Updated: 2015/03/30 11:55:15 by mmartin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdlib.h>
 #include "libft.h"
 
-void	ft_putnbr(int n)
+char	*ft_strdelblank(char *str)
 {
-	if (n == -2147483648)
+	int		i;
+	char	**tab;
+
+	i = 0;
+	while (str[i])
 	{
-		ft_putstr("-2147483648");
-		return ;
+		if (str[i] < 31)
+			str[i] = 32;
+		i++;
 	}
-	if (n < 0)
-	{
-		ft_putchar('-');
-		n = -n;
-	}
-	if (n >= 10)
-	{
-		ft_putnbr(n / 10);
-		ft_putnbr(n % 10);
-	}
-	else
-		ft_putchar(n + '0');
+	tab = ft_strsplit_space(str);
+	free(str);
+	str = ft_strimplode(tab);
+	ft_tabdel(&tab);
+	return (str);
 }

@@ -1,37 +1,42 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strjoin.c                                       :+:      :+:    :+:   */
+/*   ft_bubble_sort_str.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmartin <mmartin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2013/11/24 09:06:29 by mmartin           #+#    #+#             */
-/*   Updated: 2015/02/01 20:33:07 by mmartin          ###   ########.fr       */
+/*   Created: 2015/03/30 13:40:04 by mmartin           #+#    #+#             */
+/*   Updated: 2015/03/30 14:00:39 by mmartin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strjoin(char const *s1, char const *s2)
+char		**ft_bubble_sort_str(char **tab)
 {
-	char	*strjoin;
 	int		i;
 	int		j;
+	int		ok;
+	char	*tmp;
 
-	i = -1;
-	j = -1;
-	if (s1 == NULL && s2 == NULL)
-		return (NULL);
-	if (s1 == NULL)
-		return (ft_strdup(s2));
-	if (s2 == NULL)
-		return (ft_strdup(s1));
-	if ((strjoin = ft_strnew(ft_strlen(s1) + ft_strlen(s2) + 1)) == NULL)
-		return (NULL);
-	while (s1[++i] != '\0')
-		strjoin[i] = s1[i];
-	while (s2[++j] != '\0')
-		strjoin[i++] = s2[j];
-	strjoin[i] = '\0';
-	return (strjoin);
+	i = ft_tablen(tab) - 1;
+	ok = 1;
+	while (i > 0 && ok)
+	{
+		j = 0;
+		ok = 0;
+		while (j < i)
+		{
+			if (ft_strcmp(tab[j], tab[j + 1]) > 0)
+			{
+				tmp = tab[j];
+				tab[j] = tab[j + 1];
+				tab[j + 1] = tmp;
+				ok = 1;
+			}
+			j++;
+		}
+		i--;
+	}
+	return (tab);
 }

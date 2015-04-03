@@ -6,7 +6,7 @@
 #    By: mmartin <mmartin@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2014/02/03 14:00:31 by mmartin           #+#    #+#              #
-#    Updated: 2015/02/01 16:25:07 by mmartin          ###   ########.fr        #
+#    Updated: 2015/03/30 17:44:40 by mmartin          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -63,12 +63,15 @@ SRC_SH		=	share/ft_semlock.c				\
 				share/ft_shmdel.c				\
 				share/ft_shmdt.c
 
+SRC_SRT		=	sort/ft_bubble_sort_str.c		\
+
 SRC_STR		=	string/ft_strcat.c				\
 				string/ft_strchr.c				\
 				string/ft_strclr.c				\
 				string/ft_strcmp.c				\
 				string/ft_strcpy.c				\
 				string/ft_strdel.c				\
+				string/ft_strdelblank.c			\
 				string/ft_strdup.c				\
 				string/ft_strequ.c				\
 				string/ft_strimplode.c			\
@@ -86,6 +89,7 @@ SRC_STR		=	string/ft_strcat.c				\
 				string/ft_strndup.c				\
 				string/ft_strnequ.c				\
 				string/ft_strnew.c				\
+				string/ft_strnrchr.c			\
 				string/ft_strnstr.c				\
 				string/ft_strrchr.c				\
 				string/ft_strsplit.c			\
@@ -99,8 +103,10 @@ SRC_TEST	=	test/ft_isalnum.c				\
 				test/ft_isalpha.c				\
 				test/ft_isascii.c				\
 				test/ft_isdigit.c				\
+				test/ft_isinstring.c			\
 				test/ft_ishexa.c				\
 				test/ft_islower.c				\
+				test/ft_isnumber.c				\
 				test/ft_isoctale.c				\
 				test/ft_isprint.c				\
 				test/ft_isspace.c				\
@@ -132,6 +138,8 @@ SRC_LIB		+=	$(SRC_PRINTF)
 SRC_LIB		+=	$(SRC_REGEX)
 
 SRC_LIB		+=	$(SRC_SH)
+
+SRC_LIB		+=	$(SRC_SRT)
 
 SRC_LIB		+=	$(SRC_STR)
 
