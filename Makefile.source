@@ -6,7 +6,7 @@
 #    By: mmartin <mmartin@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2014/02/03 14:00:31 by mmartin           #+#    #+#              #
-#    Updated: 2015/03/30 17:44:40 by mmartin          ###   ########.fr        #
+#    Updated: 2015/04/05 12:19:15 by mmartin          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -47,7 +47,8 @@ SRC_LIST	=	list/ft_lstadd.c				\
 				list/ft_lstmap.c				\
 				list/ft_lstnew.c
 
-SRC_MATH	=	math/ft_pow.c
+SRC_MATH	=	math/ft_abs.c					\
+				math/ft_pow.c					\
 
 SRC_PRINTF	=	printf/ft_printf.c				\
 				printf/ft_redirect.c			\
