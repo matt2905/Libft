@@ -6,7 +6,7 @@
 #    By: mmartin <mmartin@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2014/02/03 14:00:31 by mmartin           #+#    #+#              #
-#    Updated: 2015/05/25 18:15:33 by mmartin          ###   ########.fr        #
+#    Updated: 2015/05/25 19:20:28 by mmartin          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,6 +21,7 @@ SRC_CONVERT	=	convert/ft_atof.c				\
 				convert/ft_atoh.c				\
 				convert/ft_atoi.c				\
 				convert/ft_atoul.c				\
+				convert/ft_ftoa.c				\
 				convert/ft_itoa.c				\
 				convert/ft_itob.c				\
 				convert/ft_tolower.c			\

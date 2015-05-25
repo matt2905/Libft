@@ -6,7 +6,7 @@
 /*   By: mmartin <mmartin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/19 14:24:37 by mmartin           #+#    #+#             */
-/*   Updated: 2015/05/25 18:05:08 by mmartin          ###   ########.fr       */
+/*   Updated: 2015/05/25 19:39:08 by mmartin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,7 @@ double			ft_atof(const char *str);
 unsigned int	ft_atoh(const char *str);
 int				ft_atoi(const char *str);
 unsigned long	ft_atoul(const char *str, int base);
+char			*ft_ftoa(double n, float precision);
 char			*ft_itoa(long int n, size_t sys);
 unsigned int	ft_itob(unsigned int n);
 int				ft_tolower(int c);
