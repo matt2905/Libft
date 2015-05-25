@@ -6,7 +6,7 @@
 /*   By: mmartin <mmartin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/03/25 21:34:09 by mmartin           #+#    #+#             */
-/*   Updated: 2015/01/27 12:46:16 by mmartin          ###   ########.fr       */
+/*   Updated: 2015/05/25 18:50:40 by mmartin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,11 +43,11 @@ typedef struct		s_btree
 
 typedef struct		s_atof
 {
-	double			ip;
-	double			fp;
-	int				div;
-	int				sign;
-	int				flag;
+	double	ip;
+	double	fp;
+	int		div;
+	int		sign;
+	int		flag;
 }					t_atof;
 
 /*
@@ -69,13 +69,23 @@ typedef struct		s_info
 
 typedef struct		s_printf
 {
-	char			*sign;
-	char			*sharp;
-	int				width;
-	int				pad;
-	int				precision;
-	char			*dot;
-	char			*length;
+	char	*sign;
+	char	*sharp;
+	int		width;
+	int		pad;
+	int		precision;
+	char	*dot;
+	char	*length;
 }					t_printf;
+
+/*
+**		MODF
+*/
+
+typedef struct		s_modf
+{
+	int		part_frac;
+	int		part_int;
+}					t_modf;
 
 #endif

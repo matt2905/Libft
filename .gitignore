@@ -30,3 +30,8 @@
 
 # Directory
 obj/
+
+# Editor backups
+\#*#
+*~
+.*.swp

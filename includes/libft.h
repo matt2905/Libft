@@ -6,7 +6,7 @@
 /*   By: mmartin <mmartin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/19 14:24:37 by mmartin           #+#    #+#             */
-/*   Updated: 2015/03/30 17:45:07 by mmartin          ###   ########.fr       */
+/*   Updated: 2015/05/25 18:05:08 by mmartin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,6 +79,8 @@ t_list			*ft_lstnew(void const *content, size_t content_size);
 */
 
 int				ft_pow(int n, int pow);
+double			ft_abs(double n);
+double			ft_modf(double value, double *part_int);
 
 /*
 **		REGEX
