@@ -6,7 +6,7 @@
 #    By: mmartin <mmartin@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2013/11/20 11:21:56 by mmartin           #+#    #+#              #
-#    Updated: 2015/04/03 08:57:34 by mmartin          ###   ########.fr        #
+#    Updated: 2016/01/25 19:55:47 by mmartin          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -37,7 +37,7 @@ $(NAME):	$(OBJ_LIB)
 	@ranlib $(NAME)
 	@echo "\033[33mCompilation of libft.a : \033[32mSuccess\033[0m"
 
--include	$(OBJ:.o=.d)
+-include	$(OBJ_LIB:.o=.d)
 
 $(DOBJ)%.o:	%.c
 	@mkdir -p $(DOBJ)
