@@ -6,7 +6,7 @@
 #    By: mmartin <mmartin@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2014/02/03 14:00:31 by mmartin           #+#    #+#              #
-#    Updated: 2016/01/25 19:49:42 by mmartin          ###   ########.fr        #
+#    Updated: 2016/02/05 12:30:56 by mmartin          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -71,6 +71,7 @@ SRC_SH		=	share/ft_semlock.c				\
 SRC_SRT		=	sort/ft_bubble_sort_str.c		\
 
 SRC_STR		=	string/ft_strcat.c				\
+				string/ft_strcasecmp.c			\
 				string/ft_strchr.c				\
 				string/ft_strclr.c				\
 				string/ft_strcmp.c				\
