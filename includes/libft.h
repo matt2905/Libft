@@ -6,7 +6,7 @@
 /*   By: mmartin <mmartin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/19 14:24:37 by mmartin           #+#    #+#             */
-/*   Updated: 2016/01/25 19:52:03 by mmartin          ###   ########.fr       */
+/*   Updated: 2016/02/05 12:31:49 by mmartin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -111,6 +111,7 @@ char			**ft_bubble_sort_str(char **tab);
 */
 
 char			*ft_strcat(char *s1, const char *s2);
+int				ft_strcasecmp(const char *s1, const char *s2);
 char			*ft_strchr(const char *s, int c);
 void			ft_strclr(char *s);
 int				ft_strcmp(const char *s1, const char *s2);
