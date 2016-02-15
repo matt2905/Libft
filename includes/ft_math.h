@@ -6,7 +6,7 @@
 /*   By: mmartin <mmartin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/01/25 19:40:17 by mmartin           #+#    #+#             */
-/*   Updated: 2016/01/26 13:55:48 by mmartin          ###   ########.fr       */
+/*   Updated: 2016/02/15 13:07:36 by mmartin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,5 +62,14 @@ float			ft_dot_vec4(t_vec4 a, t_vec4 b);
 t_vec4			ft_sub_vec4(t_vec4 a, t_vec4 b);
 t_vec4			ft_add_vec4(t_vec4 a, t_vec4 b);
 t_vec4			ft_mul_vec4(t_vec4 a, float b);
+
+/*
+**	ft_mat4.c
+*/
+
+t_mat4			ft_add_mat4(t_mat4 a, t_mat4 b);
+t_mat4			ft_sub_mat4(t_mat4 a, t_mat4 b);
+t_mat4			ft_mul_mat4(t_mat4 a, t_mat4 b);
+float			*ft_to_array(t_mat4 src);
 
 #endif

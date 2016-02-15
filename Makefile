@@ -6,7 +6,7 @@
 #    By: mmartin <mmartin@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2013/11/20 11:21:56 by mmartin           #+#    #+#              #
-#    Updated: 2016/02/05 12:38:12 by mmartin          ###   ########.fr        #
+#    Updated: 2016/02/15 12:37:30 by mmartin          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -67,4 +67,7 @@ fclean:		clean
 
 re:			fclean all
 
-.PHONY:		all re fclean clean
+norme:
+	find . -name "*.[ch]" -exec /usr/bin/norminette {} \+ | grep "Error\|Warning" || echo "\033[32mAll Good\033[0m"
+
+.PHONY:		all re fclean clean norme
