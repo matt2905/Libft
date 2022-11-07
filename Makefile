@@ -12,9 +12,9 @@
 
 include		Makefile.source
 
-CC			=	gcc
+CC			?=	gcc
 
-CFLAGS		=	-Wall -Werror -Wextra
+CFLAGS		+=	-Wall -Werror -Wextra --pedantic
 
 DOBJ		=	obj/
 
@@ -26,7 +26,7 @@ OBJ_LIB		=	$(patsubst %.c, $(DOBJ)%.o, $(SRC_LIB))
 
 DEPS		=	$(patsubst %.c, $(DOBJ)%.d, $(SRC_LIB))
 
-DEPENDS		=	-MT $@ -MD -MP -MF $(subst .o,.d,$@)
+DEPENDS		=	-MT $@ -MMD -MP -MF $(subst .o,.d,$@)
 
 all:		$(NAME)
 
@@ -66,8 +66,5 @@ fclean:		clean
 	@/bin/rm -f $(NAME)
 
 re:			fclean all
-
-norme:
-	find . -name "*.[ch]" -exec /usr/bin/norminette {} \+ | grep "Error\|Warning" || echo "\033[32mAll Good\033[0m"
 
 .PHONY:		all re fclean clean norme

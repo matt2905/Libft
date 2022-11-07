@@ -13,6 +13,7 @@
 #include <stdlib.h>
 #include <sys/sem.h>
 #include "libft.h"
+#include "sem_union.h"
 
 void		ft_semsetvalue(int semid, int semnum, int val)
 {
